@@ -1,8 +1,7 @@
 from datetime import datetime, timedelta, timezone
 from opentelemetry import trace
 
-tracer = tracer.get_tracer("Home Activities")
-with tracer.start_as_current_span("")
+tracer = trace.get_tracer("Home Activities")
 
 class HomeActivities:
   def run():
